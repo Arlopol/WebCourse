@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navStyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()"> &#9776; </a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6 leftSide-col">
+                <div>
+                    <h1 class="infoHeader">Arlopol</h1>
+                    <h1 class="infoHeader">Made By Omer</h1>
+                </div>
+                <form action="">
+                    <div>
+                        <h2>Username</h2>
+                        <input class="userInput" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="passwordInput " type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <iframe width="1399" height="787" src="https://www.youtube.com/embed/d4Zb4f4rnL4?list=PLwoh6bBAszPrNlrMqJXnb9G6MdgSfN686" title="27. Working with CSS iframes - Full stack web development Tutorial Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            }else{
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
