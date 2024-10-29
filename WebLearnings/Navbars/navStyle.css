@@ -16,14 +16,29 @@ body {
   padding-bottom: 6%;
 }
 
-label{
+label {
   font-size: 35px;
   font-weight: bold;
 }
 
-p{
+p {
   font-size: 20px;
   line-height: 1.3;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+hr::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: white;
 }
 
 /*#####-Navbar-######*/
@@ -34,7 +49,7 @@ nav {
 }
 
 nav ul {
-  background-color: #d1d1d1;
+  background-color: #f4e4cd;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -60,7 +75,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-  background-color: #979393;
+  background-color: #c9bdae;
   color: #fff;
 }
 
@@ -73,36 +88,54 @@ ul.topnav li.dropdownIcon {
 #section-1-gradient {
   background-color: #d1d1d1; /* Fallback for browsers that do not support gradients */
   background-image: -webkit-linear-gradient(
-    #d1d1d1,
-    rgb(128, 127, 127)
+    #f4e4cd,
+    rgb(255 255 255)
   ); /* Safari 5.1 to 6.0 */
   background-image: -moz-linear-gradient(
-    #d1d1d1,
-    rgb(128, 127, 127)
+    #f4e4cd,
+    rgb(255 255 255)
   ); /* Firefox 3.6 to 15 */
   background-image: -o-linear-gradient(
-    #d1d1d1,
-    rgb(128, 127, 127)
+    #f4e4cd,
+    rgb(255 255 255)
   ); /* Opera 11.1 to 12 */
-  background-image: -ms-linear-gradient(
-    #d1d1d1,
-    rgb(128, 127, 127)
-  ); /* IE 10 */
+  background-image: -ms-linear-gradient(#f4e4cd, rgb(255 255 255)); /* IE 10 */
   background-image: linear-gradient(
-    #d1d1d1,
-    rgb(128, 127, 127)
+    #f4e4cd,
+    rgb(255 255 255)
   ); /* Standard syntax */
 }
 
-.box{
+#section-2-gradient {
+  background-color: #d1d1d1; /* Fallback for browsers that do not support gradients */
+  background-image: -webkit-linear-gradient(
+    rgb(255 255 255),
+    #f4e4cd
+  ); /* Safari 5.1 to 6.0 */
+  background-image: -moz-linear-gradient(
+    rgb(255 255 255),
+    #f4e4cd
+  ); /* Firefox 3.6 to 15 */
+  background-image: -o-linear-gradient(
+    rgb(255 255 255),
+    #f4e4cd
+  ); /* Opera 11.1 to 12 */
+  background-image: -ms-linear-gradient(#f4e4cd, rgb(255 255 255)); /* IE 10 */
+  background-image: linear-gradient(
+    rgb(255 255 255),
+    #f4e4cd
+  ); /* Standard syntax */
+}
+
+.box {
   text-align: center;
   margin: 24px;
   padding: 36px 24px 40px 24px;
   background-color: white;
-  box-shadow: 0px 0px 5px .1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0.1px rgba(0, 0, 0, 0.75);
 }
 
-button{
+button {
   font-size: 32px;
   font-weight: bold;
   color: #fff;
@@ -114,19 +147,18 @@ button{
   border-radius: 5px;
 }
 
-button.learnMore{
+button.learnMore {
   display: block;
   margin: auto;
 }
 
-.icon{
+.icon {
   width: 100%;
 }
 
-
-.icon img{
+.icon img {
   width: 100px;
-  height: 100px;  
+  height: 100px;
 }
 
 .leftSide-col {
@@ -144,22 +176,21 @@ h1.infoHeader {
   line-height: 70px;
 }
 
-h1.section2Header{
+h1.section2Header {
   font-size: 65px;
   text-align: center;
 }
 
-h1.section3Header{
+h1.section3Header {
   font-size: 65px;
   text-align: center;
 }
 
-article{
+article {
   margin: 5%;
 }
 
-
-.purposeImage img{
+.purposeImage img {
   display: block;
   max-width: 100%;
   width: 500px;
@@ -167,22 +198,46 @@ article{
   margin: auto;
 }
 
-
-
-input[type="text"] {
-  font-size: 20px;
+input[type="text"],
+input[type="password"] {
   width: 400px;
   min-width: 100px;
-  border-radius: 7px;
-  border-color: rgba(0,0,0,0.75);
+  padding: 12px 15px;
+  margin: 8px 0;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
-.videoContainer iframe{
-    position: relative;
-    width: 90%;
-  }
 
 
+.videoContainer iframe {
+  position: relative;
+  width: 90%;
+}
+
+footer.footsy {
+  padding-left: 10%;
+}
+
+footer.footsy h1 {
+  color: black;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+footer.footsy ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0%;
+}
+
+footer.footsy ul li {
+  font-size: 16px;
+  line-height: 1.2;
+}
 
 /*######-Mobile-######*/
 
@@ -223,7 +278,7 @@ input[type="text"] {
   width: 100%;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -256,44 +311,54 @@ input[type="text"] {
     text-align: left;
   }
 
-  .col-7, .col-6, .col-5, .col-4 {
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4 {
     width: 100%;
     margin: 0;
   }
 
-  .box{
+  .mobileStack{
+    width: 50%;
+    display: block;
+    padding-left: 5%;
+  }
+
+  
+
+  .box {
     padding: 5px;
     display: block;
   }
 
-  h1.section2Header{
+  h1.section2Header {
     font-size: 50px;
     text-align: center;
   }
 
-  h1.section3Header{
+  h1.section3Header {
     font-size: 50px;
     text-align: center;
   }
 
-  article p{
+  article p {
     font-size: 20px;
   }
-  
-  .purposeImage{
+
+  .purposeImage {
     display: block;
     text-align: center;
   }
 
-  .purposeImage img{
+  .purposeImage img {
     display: block;
     width: 100%;
     width: 400px;
     height: 400px;
   }
-  
-  
-  .leftSide-col{
+
+  .leftSide-col {
     text-align: center;
   }
 
@@ -302,17 +367,17 @@ input[type="text"] {
     margin: 15px;
   }
 
-  input[type="text"]{
+  input[type="text"] {
     width: 90%;
     width: 350px;
   }
 
   .videoContainer {
     width: 100%;
-    padding-top: 56.25%; 
+    padding-top: 56.25%;
     position: relative;
   }
-  
+
   .videoContainer iframe {
     position: absolute;
     top: 0;
@@ -320,8 +385,6 @@ input[type="text"] {
     width: 100%;
     height: 100%;
   }
-
-  
 }
 
 .row {
