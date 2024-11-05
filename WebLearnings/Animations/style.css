@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.circle {
+  visibility: hidden;
+
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: rgb(212, 224, 224);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 1s, transform 0.3s 0.1s;
+}
+
+.circle img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.circle:hover {
+  background: slategrey;
+  transform: rotate(360deg);
+}
+.cloud {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.cloud img {
+  display: block;
+}
+
+.cloud img:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+  animation: wind 80s linear infinite reverse;
+}
+
+.cloud img:nth-child(2) {
+  width: 150px;
+  height: 120px;
+  opacity: .7;
+  animation: wind 50s linear infinite reverse;
+
+}
+
+.dropImg {
+  visibility: hidden;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+}
+
+.dropImg img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.dropImg img:hover {
+    animation-name: drop;
+    animation-duration: 1s;
+}
+
+.wrapper2{
+    margin-top: 10%;
+}
+
+.carContainer{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.car1 , .car2{
+    display: block;   
+    position: relative; 
+    margin-left: 10%;
+    animation-name: drive;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.77, 1, .28);
+}
+
+.car1 img, .car2 img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.car1.car3{
+  display: block;   
+  position: relative; 
+  margin-left: 10%;
+  animation-name: drive;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, 0.2, .6, 1);
+
+
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(0px);
+}
+to {
+    transform: translateY(500px);
+  }
+}
+
+
+@keyframes drive {
+    from {
+      transform: translateX(-500px);
+  }
+  to {
+      transform: translateX(3000px);
+    }
+  }
+
+
+@keyframes wind {
+    from {
+      left: -300px;
+  }
+  to {
+      left: 100%;
+    }
+  }

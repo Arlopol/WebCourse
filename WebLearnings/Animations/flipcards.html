@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cards.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Hover On a Card</h1>
+      <hr />
+      <ul class="cards">
+        <li>
+          <div class="front" style="background-color: antiquewhite">Big</div>
+          <div class="back" style="background-color: gray">Small</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Long</div>
+          <div class="back" style="background-color: gray">Short</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Good</div>
+          <div class="back" style="background-color: gray">Bad</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Cold</div>
+          <div class="back" style="background-color: gray">Hot</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Happy</div>
+          <div class="back" style="background-color: gray">Sad</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Clean</div>
+          <div class="back" style="background-color: gray">Dirty</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Up</div>
+          <div class="back" style="background-color: gray">Down</div>
+        </li>
+
+        <li>
+          <div class="front" style="background-color: antiquewhite">Easy</div>
+          <div class="back" style="background-color: gray">Difficult</div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".wrapper h1");
+        const text = header.textContent;
+        var count = 0;
+        header.innerHTML = "";
+
+        text.split("").forEach((char) => {
+          const span = document.createElement("span");
+          span.textContent = char;
+          if ((char == "O" || char == "a" || char == "C") && count <= 2) {
+            header.innerHTML += " ";
+            count += 1;
+          }
+          header.appendChild(span);
+        });
+      });
+    </script>
+  </body>
+</html>

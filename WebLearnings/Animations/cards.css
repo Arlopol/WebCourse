@@ -1,0 +1,78 @@
+.wrapper h1 {
+  text-align: center;
+}
+
+.wrapper h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+  padding: 100px;
+  list-style-type: none;
+  position: relative;
+}
+
+.front,
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  width: 300px;
+  height: 300px;
+  transition: transform 0.4s ease;
+}
+
+.back {
+  transform: rotateY(90deg);
+  position: unset;
+}
+
+.cards li:hover .front {
+  transform: rotateY(90deg);
+}
+
+.cards li:hover .back {
+  transform: rotateY(0deg);
+}
+
+.wrapper h1 span:hover {
+  transform: scale(1.5);
+  color: gray;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background: radial-gradient(circle, #faebd7, #000000);
+    border-radius: 10px;
+
+}
+
+hr:hover{
+    animation: moveAndChangeColor 5s ease forwards; 
+
+}
+
+@keyframes moveAndChangeColor {
+    0% {
+        background: radial-gradient(circle, #faebd7, rgb(0, 0, 0)); 
+        background-size: 200% 100%; 
+        background-position: left; 
+    }
+    50% {
+        background: radial-gradient(circle, #000000, #faebd7); 
+        background-position: center; 
+    }
+    100% {
+        background: radial-gradient(circle, rgb(0, 0, 0),#faebd7);
+        background-position: right; 
+    }
+}

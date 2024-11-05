@@ -1,0 +1,74 @@
+
+
+#popup{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(131, 131, 130);
+    border-radius: 10%;
+    top: 200px;
+    width: 400px;
+    height: 200px;
+}
+
+#popup .popupContainer{
+    position: absolute;
+    box-sizing: border-box;
+    width: 400px;
+    
+}
+
+#popup img{
+    z-index: -1;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -60px;
+    left: 150px;
+}
+
+
+
+.cross{
+    text-align: left;
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    position: absolute;
+    top:20px;
+    left:20px;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/***############Animation##############***/
+
+#popup{
+    top: -400px;
+    transform-origin: 10px 10px;
+    animation: drop 0.7s 0.1s ease-in forwards,
+    swing 4s 2s ease-in-out forwards alternate; 
+}
+
+
+
+@keyframes drop{
+    0%{}
+    70%{transform: translateY(700px);}
+    100%{transform: translateY(600px);}
+}
+
+@keyframes swing{
+    0%{transform: translateY(600px) rotateZ(0deg);}
+    40%{transform: translateY(600px) rotateZ(90deg);}
+    70%{transform: translateY(600px) rotateZ(70deg);}
+    100%{transform: translateY(600px) rotateZ(75deg);}
+    140% {transform: translateY(600px) rotateZ(0deg);}
+    
+}
+
+
