@@ -230,3 +230,36 @@ body {
     scroll-behavior: smooth;
   }
   
+
+  @media screen and (max-width: 960px) {
+    header {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  
+   
+  header .menuIcon img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
+
+    .text {
+      width: 100%;
+      height: auto;
+    }
+  
+    
+    .text h1 {
+      font-size: 6vw; 
+    }
+  
+    .text p {
+      font-size: 4vw; 
+    }
+  }
+
+
+    
+  

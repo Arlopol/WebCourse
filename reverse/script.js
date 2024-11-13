@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 const columnleft = document.getElementById('columnleft');
 const columnright = document.getElementById('columnright');
 const backButton = menu.querySelector('a img');
-const colR = document.getElementsByClassName("colR");
+
 
 // Toggle the menu and animate the columns
 menuToggle.addEventListener('click', () => {
