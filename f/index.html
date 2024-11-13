@@ -25,6 +25,7 @@
     </header>
 
     <div id="grid-wrapper">
+
         <div class="left-col">
             <div class="background-image">
                 <img src="assets/img/adam-bartoszewicz-MaqdFCtH8Oo-unsplash.jpg" alt="Image 1">
@@ -33,29 +34,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
             </div>
-        </div>
-        <div class="right-col">
-            <div class="background-image">
-                <img src="assets/img/sahand-hoseini-WLj_deC_iYM-unsplash.jpg" alt="Image 2">
-            </div>
-        </div>
-
-        <div class="left-col">
             <div class="background-image">
                 <img src="assets/img/taylor-kiser-6RJct18G_3I-unsplash.jpg" alt="Image 3">
             </div>
-        </div>
-        <div class="right-col">
-            <div class="background-image">
-                <img src="assets/img/leighann-blackwood-HCGCpFxQlrA-unsplash.jpg" alt="Image 4">
-                <div class="text">
-                    <h1>Food Basics</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="left-col">
             <div class="background-image">
                 <img src="assets/img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="Image 5">
                 <div class="text">
@@ -64,26 +45,28 @@
                 </div>
             </div>
         </div>
+
+
         <div class="right-col">
+            <div class="background-image">
+                <img src="assets/img/sahand-hoseini-WLj_deC_iYM-unsplash.jpg" alt="Image 2">
+            </div>
+            <div class="background-image">
+                <img src="assets/img/leighann-blackwood-HCGCpFxQlrA-unsplash.jpg" alt="Image 4">
+                <div class="text">
+                    <h1>Food Basics</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
             <div class="background-image">
                 <img src="assets/img/matthias-heil-lDOEwat_MPs-unsplash.jpg" alt="Image 6">
             </div>
         </div>
+
         
     </div>
 
 
-    <script>
-        document.addEventListener("scroll", function() {
-    const scrollPosition = window.scrollY; // Sayfa kaydırma mesafesini al
-    const rightCol = document.querySelectorAll(".right-col .background-image");
-
-    rightCol.forEach((item, index) => {
-        item.style.transform = `translateY(${scrollPosition}px)`;
-    });
-});
-
-    </script>
 
     
 </body>
