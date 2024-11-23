@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/menuStyle.css" />
+  </head>
+  <header>
+      <div class="logo">
+          <img src="assets/img/food-holidays-meal-svgrepo-com.svg" alt="Logo">
+
+      </div>
+      <div class="menuIcon">
+          <a href="#" id="menu-toggle">
+              <img src="assets/img/three-line-horizontal-svgrepo-com.svg" alt="Menu Icon">
+          </a>
+      </div>
+  </header>
+  <div class="title">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>MENU</h1>
+  </div>
+  <body>
+
+    <div class="menu">
+        <div class="buttonContainer">
+            <div class="buttonContainer">
+                <button onclick="location.href='index.html'">
+                    <span class="buttonText">Homepage</span>
+                  </button>
+                  
+              
+                <button >
+                  <span class="buttonText">About</span>
+                </button>
+              
+                <button >
+                  <span class="buttonText">Purpose</span>
+                </button>
+              </div>
+              
+            <a href="javascript:void(0)" id="menu-close">
+                <img src="assets/img/back-svgrepo-com.svg" alt="Back">
+            </a>
+        </div>
+    </div>
+
+
+    <section class="swiper mySwiper">
+        
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/menu/1.jpg" alt="Food 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/2.jpg" alt="Food 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/3.jpg" alt="Food 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/4.jpg" alt="Food 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/5.jpg" alt="Food 5" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/6.jpg" alt="Food 6" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/menu/7.jpg" alt="Food 7" />
+        </div>
+      </div>
+
+      
+    </section>
+
+    <div class="navigate">
+        <div class="navigate-left"><button><img src="assets/img/menu/left-2-svgrepo-com.svg" alt=""></button></div>
+        <div class="navigate-right"><button><img src="assets/img/menu/right-2-svgrepo-com.svg" alt=""></button></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
